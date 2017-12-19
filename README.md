@@ -6,7 +6,7 @@ Depands on [Math JS library](http://mathjs.org/).
 
 Usage examples:
 
-```
+```js
 // new gaussian beam with infinite radius of curvature, 1mm waist diameter and 530 nm wavelength
 var q = new GaussianBeam(Infinity, 1e-3, 530e-9); 
 
@@ -14,7 +14,7 @@ var q = new GaussianBeam(Infinity, 1e-3, 530e-9);
 var q1 = q.propogate([[a,b], [c,d]]); // new q value after arbitrary abcd matrix
 ```
 
-```
+```js
 // array of optical elements divided by free space
 var elements = [
     {x: 0.5, abcd: ThinLens(0.1)},
